@@ -23,6 +23,4 @@ class EmployeeSalary:
     def salary(self):
         weekly_salary = self.hours * self.hourly_payment
         return weekly_salary
-
-staff1 = EmployeeSalary.get_hours('Иван',2, '@email.ru')
-print(staff1.salary())
+    
