@@ -21,5 +21,8 @@ class EmployeeSalary:
         cls.hourly_payment = new_hourly_payment
     
     def salary(self):
-        weekly_salary = self.hours * EmployeeSalary.hourly_payment
+        weekly_salary = self.hours * self.hourly_payment
         return weekly_salary
+
+staff1 = EmployeeSalary.get_hours('Иван',2, '@email.ru')
+print(staff1.salary())
